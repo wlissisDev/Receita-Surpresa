@@ -1,0 +1,88 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+}
+/*================================ HOME ========================= */
+.home {
+    display: flex;
+    flex-direction: row-reverse;
+    width: 100%;
+    height: 650px;
+}
+
+#home-image {
+    background: url("https://img.freepik.com/fotos-gratis/variedade-de-deliciosos-ingredientes-para-receitas-saudaveis_23-2148988743.jpg?w=2000");
+    width: 35%;
+    height: 100%;
+
+    opacity: 89;
+}
+
+.home-info {
+    width: auto;
+    padding: 2rem;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #56351e;
+}
+
+.home-info h1 {
+    color: #fff;
+    text-align: center;
+
+    font-size: 40px;
+}
+
+.home-info p {
+    margin-top: 30px;
+    font-size: 22px;
+    color: #fff;
+    text-align: center;
+}
+
+.home-button {
+    font-size: 26px;
+    font-weight: bold;
+    background-color: #fff3b0;
+    color: #56351e;
+
+    text-decoration: none;
+
+    margin-top: 30px;
+    padding: 12px 60px;
+
+    border: 0;
+    border-radius: 30px;
+
+    cursor: pointer;
+    transition: .5s;
+}
+.home-button:hover{
+    background-color: #f5e275;
+    
+}
+
+@media (max-width:600px){
+    
+    .home{
+        flex-direction: column;
+    }
+
+    #home-image {
+        display: none;
+    }
+
+    .home-info {
+        height: 100%;
+        /* border-radius: 0 0 180px  180px; */
+    }
+}

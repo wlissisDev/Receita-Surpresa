@@ -1,0 +1,170 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+    color: #351f11;
+}
+
+.container {
+    width: 100%;
+    height: auto;
+}
+.receita {
+    margin: auto;
+    padding: 2rem;
+    width: 70%;
+    height: 100%;
+    background-color: #fff3b0;
+    box-shadow: 1px 2px 50px rgba(0 0 0 / 0.2), 1px 2px 10px rgba(0 0 0 / 0.5);
+}
+
+.ver-receita {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.ver-receita h1 {
+    color: #492c18;
+}
+
+.ver-receita span {
+    margin-top: 10px;
+    font-size: 20px;
+}
+
+.ver-receita button {
+    font-size: 26px;
+    font-weight: bold;
+    background-color: #56351e;
+    color: #fff3b0;
+
+    margin: 20px 0;
+
+    padding: 12px 60px;
+
+    border: 0;
+    border-radius: 30px;
+
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.ver-receita button:hover {
+    background-color: #754a2b;
+}
+
+/* ===========info-receitas============= */
+.info-receita {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: auto;
+
+    margin: auto;
+    padding: 2rem;
+    width: 80%;
+    height: auto;
+
+    border-radius: 16px;
+    box-shadow: 1px 2px 50px rgba(0 0 0 / 0.2), 1px 2px 10px rgba(0 0 0 / 0.5);
+
+    background-color: #fff;
+
+    text-align: center;
+}
+
+.info-receita ul {
+    list-style: none;
+}
+
+.info-receita img {
+    max-width: 600px;
+    border-radius: 8px;
+}
+#info{
+    width: 100%;
+}
+#imageReiceita{
+        width: 100%;
+        height: 350px;
+    }
+
+
+/* ========igredientes=========== */
+
+.ingredientes h2 {
+    color: #351f11;
+    margin: 10px 0;
+}
+
+.ingredientes ol {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    list-style: none;
+    align-items: center;
+    justify-content: center;
+}
+
+.ingredientes ol li {
+    text-transform: capitalize;
+    color: #333;
+    margin-left: 20px;
+    text-align: left;
+    font-size: 14px;
+}
+
+.modo-preparo p {
+    text-align: justify;
+    line-height: 25px;
+    color: #333;
+}
+
+#link-video{
+    font-size: 20px;
+    font-weight: bold;
+    background-color: #56351e;
+    color: #fff3b0;
+
+    text-decoration: none;
+
+    margin: 20px 0;
+
+    padding: 12px 30px;
+
+    border: 0;
+    border-radius: 30px;
+
+    cursor: pointer;
+}
+/*================ RESPONSIVIDADE============= */
+
+
+
+@media (max-width: 400px){
+    .receita {
+        width: 100%;
+        margin: 0;
+        padding: 20px 0 0 0;
+    }
+
+    .info-receita {
+        width: 100%;
+    }
+
+    #imageReiceita{
+        width: 100%;
+        height: 200px;
+    }
+}
+
+
+.none{
+    display: none;
+}
