@@ -77,10 +77,10 @@ function addElements() {
   modoDePreparo(data);
 }
 
-getRecipe()
+// getRecipe()
 addElements()
 
-// btnBuscar.addEventListener("click", async () => {
-//   await getRecipe();
-// });
+btnBuscar.addEventListener("click", () => {
+  getRecipe();
+});
 
