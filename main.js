@@ -77,7 +77,6 @@ function addElements() {
   modoDePreparo(data);
 }
 
-// getRecipe()
 addElements()
 
 btnBuscar.addEventListener("click", () => {
